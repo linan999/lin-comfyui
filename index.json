@@ -7,6 +7,13 @@
       "description": "",
       "tags": [],
       "file": "ai_gpt基础生图.json"
+    },
+    {
+      "id": "批量",
+      "name": "批量",
+      "description": "",
+      "tags": [],
+      "file": "批量.json"
     }
   ]
 }
