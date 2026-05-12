@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "templates": []
+  "templates": [
+    {
+      "id": "ai_gpt基础生图",
+      "name": "ai gpt基础生图",
+      "description": "",
+      "tags": [],
+      "file": "ai_gpt基础生图.json"
+    }
+  ]
 }
