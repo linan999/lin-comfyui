@@ -1,0 +1,1419 @@
+{
+  "id": "f1caae4c-4cc2-4b6b-92e3-3e3a98a35e91",
+  "revision": 0,
+  "last_node_id": 164,
+  "last_link_id": 156,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "SaveImage",
+      "pos": [
+        2310.5482811112115,
+        -2945.4198058923216
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 120
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#c09430",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 160,
+      "type": "XiaoLinApiPreset",
+      "pos": [
+        664.6372513038377,
+        -2475.928428776426
+      ],
+      "size": [
+        270,
+        250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖模型",
+          "name": "覆盖模型",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖接口地址",
+          "name": "覆盖接口地址",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖接口地址"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖API密钥",
+          "name": "覆盖API密钥",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖API密钥"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "STRING",
+          "links": [
+            146
+          ]
+        },
+        {
+          "localized_name": "接口地址",
+          "name": "接口地址",
+          "type": "STRING",
+          "links": [
+            147
+          ]
+        },
+        {
+          "localized_name": "API密钥",
+          "name": "API密钥",
+          "type": "STRING",
+          "links": [
+            148
+          ]
+        },
+        {
+          "localized_name": "API配置(JSON)",
+          "name": "API配置(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "提供商",
+          "name": "提供商",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "请求头(JSON)",
+          "name": "请求头(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "密钥引用",
+          "name": "密钥引用",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinApiPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "魔搭",
+        "",
+        "",
+        ""
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 156,
+      "type": "LoadImage",
+      "pos": [
+        982.4312976880848,
+        -2932.778879999268
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "选择文件上传",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            153,
+            154,
+            155
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "生图关键词定制 (2).png",
+        "image"
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 40,
+      "type": "easy showAnything",
+      "pos": [
+        2614.1452206579474,
+        -2598.7512517449713
+      ],
+      "size": [
+        359.1995214455519,
+        428.5581172837401
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 122
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "**用户**: 一位年轻白人男性内容创作者坐在木质书桌前，正对着镜头进行直播或录制视频，他身穿黑色长袖T恤，棕色微卷短发，面部表情专注而略带微笑，眼神直视前方的相机。前景左侧是一台架在三脚架上的专业无反相机，屏幕中清晰显示着他本人的实时画面，构图采用浅景深，使相机主体突出而背景虚化。桌面中央放置一台带有RGB彩色背光的紧凑型MIDI控制器或音频混音器，按钮与旋钮发出蓝、绿、红等霓虹色光芒，控制器前方架设一支黑色电容麦克风，配有防喷罩和悬臂支架。右侧是一个亮起的环形补光灯，发出明亮的白色光环，边缘被环境光染成粉紫色，灯架为黑色金属材质。背景墙面被氛围灯渲染成渐变的紫蓝色与粉红色光影，营造出科技感与沉浸式直播间的氛围；左侧背景隐约可见一个置物架，摆放着相框、盆栽等装饰物，下方是沙发一角，整体空间为现代居家工作室风格。画面采用中近景视角，略微仰拍以增强人物存在感，光线主要来自环形灯正面补光、设备LED背光及环境氛围灯，形成高对比度、低照度的冷暖色调碰撞，阴影柔和，高光细节丰富。整体风格为未来感科技风+温馨居家风结合，强调数字创作与个人表达，适合用于YouTube博主、播客主播、音乐制作人或游戏实况场景，画质需达到超高清8K级别，细节锐利，色彩饱和度高，具有电影感布光与视觉冲击力。\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"2560x1440\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 1,\n  \"uploaded_images\": 1,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"seed\": 1773000678\n}\n\n---"
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 22,
+      "type": "AB_Images",
+      "pos": [
+        2667.9985303483586,
+        -2948.4214133415453
+      ],
+      "size": [
+        263.5089222428983,
+        278.25870084169355
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "a",
+          "name": "a",
+          "type": "IMAGE",
+          "link": 123
+        },
+        {
+          "localized_name": "b",
+          "name": "b",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 155
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "aux_id": "kk8bit/KayTool",
+        "ver": "f4c80b009194d51a13a94f06d37847110a174c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "#c09430",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 107,
+      "type": "XiaoLinApiPreset",
+      "pos": [
+        1453.9567484415247,
+        -2681.042928640982
+      ],
+      "size": [
+        270,
+        250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖模型",
+          "name": "覆盖模型",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖接口地址",
+          "name": "覆盖接口地址",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖接口地址"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖API密钥",
+          "name": "覆盖API密钥",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖API密钥"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "STRING",
+          "links": [
+            114
+          ]
+        },
+        {
+          "localized_name": "接口地址",
+          "name": "接口地址",
+          "type": "STRING",
+          "links": [
+            116
+          ]
+        },
+        {
+          "localized_name": "API密钥",
+          "name": "API密钥",
+          "type": "STRING",
+          "links": [
+            117
+          ]
+        },
+        {
+          "localized_name": "API配置(JSON)",
+          "name": "API配置(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "提供商",
+          "name": "提供商",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "请求头(JSON)",
+          "name": "请求头(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "密钥引用",
+          "name": "密钥引用",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinApiPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "特惠站",
+        "",
+        "",
+        ""
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 134,
+      "type": "XiaoLinPromptPreset",
+      "pos": [
+        1325.967115107992,
+        -2947.6236077563613
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "提示词内容",
+          "name": "提示词内容",
+          "type": "STRING",
+          "widget": {
+            "name": "提示词内容"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "提示词",
+          "name": "提示词",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "localized_name": "预览图",
+          "name": "预览图",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinPromptPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "精修",
+        "一张没有任何叠加排版文字和图标的纯净图像，保留原始画面的主体与构图，画面经过高清化处理变得极为清晰锐利，所有纹理和细节都得到增强，无任何水印或文字干扰，保持原图比例不变，数字增强，无失真放大，降噪处理，高保真，超精细纹理，8K分辨率一张没有任何叠加排版文字和图标的纯净图像，保留原始画面的主体与构图，画面经过高清化处理变得极为清晰锐利，所有纹理和细节都得到增强，无任何水印或文字干扰，保持原图比例不变，数字增强，无失真放大，降噪处理，高保真，超精细纹理，8K分辨率，照片级真实感。"
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 157,
+      "type": "easy showAnything",
+      "pos": [
+        2327.461721878596,
+        -2164.6419389446805
+      ],
+      "size": [
+        258.74835068761786,
+        358
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 144
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 18,
+      "type": "easy showAnything",
+      "pos": [
+        2321.7994243285943,
+        -2598.780536075921
+      ],
+      "size": [
+        258.74835068761786,
+        358
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 121
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "{\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"2560x1440\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 1,\n  \"uploaded_images\": 1,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"seed\": 1773000678\n}"
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 138,
+      "type": "小林AtlasCloudUnifiedImgGen",
+      "pos": [
+        1831.1247512691482,
+        -2944.914229326244
+      ],
+      "size": [
+        400,
+        794
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "参考图1",
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 154
+        },
+        {
+          "label": "参考图2",
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图3",
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图4",
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图5",
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图6",
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "base_url",
+          "name": "base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "base_url"
+          },
+          "link": 116
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": 117
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 150
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": 114
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_size",
+          "name": "custom_size",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "output_format",
+          "name": "output_format",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "output_format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "input_fidelity",
+          "name": "input_fidelity",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "input_fidelity"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "moderation",
+          "name": "moderation",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "moderation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "request_timeout",
+          "name": "request_timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "request_timeout"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "download_timeout",
+          "name": "download_timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "download_timeout"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "input_max_side",
+          "name": "input_max_side",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "input_max_side"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "return_input_on_error",
+          "name": "return_input_on_error",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "return_input_on_error"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_params",
+          "name": "extra_params",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_params"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "clear_chats",
+          "name": "clear_chats",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "clear_chats"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "async_mode",
+          "name": "async_mode",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "async_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "verify_ssl",
+          "name": "verify_ssl",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "verify_ssl"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "poll_path",
+          "name": "poll_path",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "poll_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_retries",
+          "name": "max_retries",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_retries"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "endpoint",
+          "name": "endpoint",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "endpoint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_format",
+          "name": "response_format",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "response_format"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            120,
+            123
+          ]
+        },
+        {
+          "localized_name": "info",
+          "name": "info",
+          "type": "STRING",
+          "links": [
+            121
+          ]
+        },
+        {
+          "localized_name": "对话记录",
+          "name": "对话记录",
+          "type": "STRING",
+          "links": [
+            122
+          ]
+        },
+        {
+          "localized_name": "图片链接",
+          "name": "图片链接",
+          "type": "STRING",
+          "links": [
+            144
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "小林AtlasCloudUnifiedImgGen",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://value.apiqik.online",
+        "",
+        "根据红色和绿色色块/线条的指引修复画面，并且修复产品光影,位置不变，红色：延申的数据线连接至产品顶端，",
+        "dall-e-3",
+        "2560x1440 (2K 横版)",
+        "",
+        "standard",
+        "png",
+        "high",
+        "auto",
+        "auto",
+        600,
+        120,
+        0,
+        false,
+        266574583,
+        "randomize",
+        "",
+        true,
+        false,
+        true,
+        "",
+        0,
+        "auto",
+        "b64_json"
+      ],
+      "color": "#008181",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 161,
+      "type": "easy showAnything",
+      "pos": [
+        1553.4118791522758,
+        -2362.3075680291436
+      ],
+      "size": [
+        592.7273393110797,
+        413.2362948330965
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 149
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": [
+            150
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "一位年轻白人男性内容创作者坐在木质书桌前，正对着镜头进行直播或录制视频，他身穿黑色长袖T恤，棕色微卷短发，面部表情专注而略带微笑，眼神直视前方的相机。前景左侧是一台架在三脚架上的专业无反相机，屏幕中清晰显示着他本人的实时画面，构图采用浅景深，使相机主体突出而背景虚化。桌面中央放置一台带有RGB彩色背光的紧凑型MIDI控制器或音频混音器，按钮与旋钮发出蓝、绿、红等霓虹色光芒，控制器前方架设一支黑色电容麦克风，配有防喷罩和悬臂支架。右侧是一个亮起的环形补光灯，发出明亮的白色光环，边缘被环境光染成粉紫色，灯架为黑色金属材质。背景墙面被氛围灯渲染成渐变的紫蓝色与粉红色光影，营造出科技感与沉浸式直播间的氛围；左侧背景隐约可见一个置物架，摆放着相框、盆栽等装饰物，下方是沙发一角，整体空间为现代居家工作室风格。画面采用中近景视角，略微仰拍以增强人物存在感，光线主要来自环形灯正面补光、设备LED背光及环境氛围灯，形成高对比度、低照度的冷暖色调碰撞，阴影柔和，高光细节丰富。整体风格为未来感科技风+温馨居家风结合，强调数字创作与个人表达，适合用于YouTube博主、播客主播、音乐制作人或游戏实况场景，画质需达到超高清8K级别，细节锐利，色彩饱和度高，具有电影感布光与视觉冲击力。"
+      ]
+    },
+    {
+      "id": 158,
+      "type": "小林AtlasCloudModelScopeChat",
+      "pos": [
+        981.8847100073503,
+        -2549.9053949326176
+      ],
+      "size": [
+        400,
+        482
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "参考图1",
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 153
+        },
+        {
+          "label": "参考图2",
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图3",
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图4",
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图5",
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图6",
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "base_url",
+          "name": "base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "base_url"
+          },
+          "link": 147
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": 148
+        },
+        {
+          "localized_name": "model_id",
+          "name": "model_id",
+          "type": "STRING",
+          "widget": {
+            "name": "model_id"
+          },
+          "link": 146
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "user_prompt",
+          "name": "user_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "user_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed_mode",
+          "name": "seed_mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "seed_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "temperature",
+          "name": "temperature",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "temperature"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "top_p",
+          "name": "top_p",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "top_p"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_tokens",
+          "name": "max_tokens",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "AI回复",
+          "name": "AI回复",
+          "type": "STRING",
+          "links": [
+            149
+          ]
+        },
+        {
+          "localized_name": "完整响应",
+          "name": "完整响应",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "信息",
+          "name": "信息",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "小林AtlasCloudModelScopeChat",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://api-inference.modelscope.cn/v1",
+        "",
+        "Qwen/Qwen3-VL-8B-Instruct",
+        "你是一个Ai生成设计师，现在你要反推出这张海报的AI生图中文描述词，生成一份详细的文本提示词，包括关键元素、人物、动作、场景、构图、色彩色调，画面风格、背景要素，要极致详尽涵盖风格、构图、视角、光影、元素、内容等，整理成一段连贯的能够指导Ai作图工具重新创作类似作品的文生图中文提示词，直接输出提示词结果，不要总结，不要思考过程",
+        "",
+        983489683,
+        "randomize",
+        "随机",
+        0.7,
+        0.9,
+        2048,
+        180
+      ]
+    }
+  ],
+  "links": [
+    [
+      114,
+      107,
+      0,
+      138,
+      9,
+      "STRING"
+    ],
+    [
+      116,
+      107,
+      1,
+      138,
+      6,
+      "STRING"
+    ],
+    [
+      117,
+      107,
+      2,
+      138,
+      7,
+      "STRING"
+    ],
+    [
+      120,
+      138,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      121,
+      138,
+      1,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      122,
+      138,
+      2,
+      40,
+      0,
+      "STRING"
+    ],
+    [
+      123,
+      138,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      144,
+      138,
+      3,
+      157,
+      0,
+      "STRING"
+    ],
+    [
+      146,
+      160,
+      0,
+      158,
+      8,
+      "STRING"
+    ],
+    [
+      147,
+      160,
+      1,
+      158,
+      6,
+      "STRING"
+    ],
+    [
+      148,
+      160,
+      2,
+      158,
+      7,
+      "STRING"
+    ],
+    [
+      149,
+      158,
+      0,
+      161,
+      0,
+      "STRING"
+    ],
+    [
+      150,
+      161,
+      0,
+      138,
+      8,
+      "STRING"
+    ],
+    [
+      153,
+      156,
+      0,
+      158,
+      0,
+      "IMAGE"
+    ],
+    [
+      154,
+      156,
+      0,
+      138,
+      0,
+      "IMAGE"
+    ],
+    [
+      155,
+      156,
+      0,
+      22,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 4,
+      "title": "Group",
+      "bounding": [
+        639.1715948653684,
+        -3021.223607756361,
+        2385.311851396187,
+        1224.5816688116806
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.42409761837248494,
+      "offset": [
+        61.929795143200046,
+        3320.6965537609503
+      ]
+    }
+  },
+  "version": 0.4
+}
