@@ -1,0 +1,2121 @@
+{
+  "id": "f1caae4c-4cc2-4b6b-92e3-3e3a98a35e91",
+  "revision": 0,
+  "last_node_id": 186,
+  "last_link_id": 191,
+  "nodes": [
+    {
+      "id": 160,
+      "type": "XiaoLinApiPreset",
+      "pos": [
+        858.3170868685212,
+        -2990.6507239505936
+      ],
+      "size": [
+        270,
+        250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖模型",
+          "name": "覆盖模型",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖接口地址",
+          "name": "覆盖接口地址",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖接口地址"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖API密钥",
+          "name": "覆盖API密钥",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖API密钥"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "STRING",
+          "links": [
+            146
+          ]
+        },
+        {
+          "localized_name": "接口地址",
+          "name": "接口地址",
+          "type": "STRING",
+          "links": [
+            147
+          ]
+        },
+        {
+          "localized_name": "API密钥",
+          "name": "API密钥",
+          "type": "STRING",
+          "links": [
+            148
+          ]
+        },
+        {
+          "localized_name": "API配置(JSON)",
+          "name": "API配置(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "提供商",
+          "name": "提供商",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "请求头(JSON)",
+          "name": "请求头(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "密钥引用",
+          "name": "密钥引用",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinApiPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "魔搭",
+        "",
+        "",
+        ""
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 18,
+      "type": "easy showAnything",
+      "pos": [
+        1998.229779466562,
+        -2643.222307902493
+      ],
+      "size": [
+        258.74835068761786,
+        358
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 121
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "{\n  \"mode\": \"batch\",\n  \"count\": 7,\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"endpoint\": \"auto\",\n  \"results\": [\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    },\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    },\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    },\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    },\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    },\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    },\n    {\n      \"mode\": \"img2img\",\n      \"model\": \"gpt-image-2-flatfee-2k\",\n      \"size\": \"1536x2048\",\n      \"quality\": \"standard\",\n      \"quality_applied\": false,\n      \"output_format_requested\": \"png\",\n      \"output_format_effective\": \"png\",\n      \"output_format_auto_adjusted\": false,\n      \"background\": \"auto\",\n      \"moderation\": \"auto\",\n      \"gpt_image_params_applied\": true,\n      \"input_fidelity\": \"high\",\n      \"reference_inputs\": 2,\n      \"uploaded_images\": 2,\n      \"input_max_side\": 0,\n      \"request_timeout\": 600,\n      \"download_timeout\": 120,\n      \"data_source\": \"b64_json\",\n      \"extra_params_applied\": false,\n      \"size_selected\": \"custom (自定义)\",\n      \"custom_size\": \"1536x2048\",\n      \"seed\": 925471225\n    }\n  ]\n}"
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 40,
+      "type": "easy showAnything",
+      "pos": [
+        2302.3669371505443,
+        -2653.4615867929815
+      ],
+      "size": [
+        359.1995214455519,
+        428.5581172837401
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 122
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+        "Node name for S&R": "easy showAnything",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "**用户**: Dramatic low-angle hero shot looking upward at the AI condenser microphone, black metal mesh head and dark gray brushed aluminum body, RGB lighting effects glowing blue-purple at the base, placed on a reflective dark desk surface with visible reflections, background is a dimly lit gaming room with LED strip lights along the wall edges, a curved monitor glow in the far distance, and acoustic foam panels, three-point lighting setup with cool blue key light from upper left casting sharp highlights on the metallic mesh, warm purple rim light from the right edge catching the body contours, and soft ambient glow from the monitor fill light, fine light particles and subtle lens flare floating in the air, shallow depth of field with background elements softly blurred, cinematic color grading with blue-purple palette, keep product appearance unchanged, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---\n\n**用户**: Split-screen comparison image, left side shows a frustrated Caucasian male streamer in his late 20s with short brown hair, wearing a basic headset, hand on forehead looking stressed and annoyed, his room is messy with a desk fan and mechanical keyboard clatter indicated by red jagged sound wave graphics overlay, warm harsh tungsten lighting from a single desk lamp creating unflattering shadows, right side shows the same type of setup but calm and professional, the streamer is relaxed with a slight smile, smooth blue-purple audio waveform graphics overlay suggesting clarity, soft diffused lighting from monitor and LED strips, dark unified background connecting both halves with a glowing neon dividing line in the center, modern tech infographic style with rounded corner label boxes, cinematic color grading, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---\n\n**用户**: Top-down overhead close-up shot of a Caucasian female hand with manicured nails pressing the noise cancellation button on top of the AI condenser microphone, the button glows bright blue upon activation with a soft pulse effect, fine blue-purple AI noise cancellation sound wave particles radiating outward from the microphone in a circular spiral pattern with tiny glowing dots and light halos, the microphone sits on a dark walnut wood desk with a mechanical keyboard partially visible at the top edge, a ceramic coffee mug with steam at the left corner, and a smartphone showing audio waveform at the right edge creating a realistic workspace, three-point lighting with warm tungsten desk lamp from the left casting golden highlights on the microphone body, cool blue ambient fill from a monitor screen off-camera right, and soft overhead ambient light, shallow depth of field focusing on the button press moment, tiny floating dust particles catching the light, keep product appearance unchanged, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---\n\n**用户**: Cinematic tilted Dutch angle shot of the AI condenser microphone on a gaming desk, RGB lighting at the base cycling through rainbow gradient colors with visible light rays, subtle lens flare, and soft glow halos emanating outward, a Caucasian male gamer in his early 30s with short blond hair and focused expression in the background wearing over-ear headphones, leaning forward slightly looking at a curved ultrawide monitor displaying a game, his face softly illuminated by the monitor's cool glow, the gaming room has layered lighting with ambient LED strip underglow along the desk edge, purple wall wash lights, and a warm accent lamp in the far corner, mechanical keyboard with RGB keys and gaming mouse visible on the desk surface, atmospheric haze giving volume to the light beams, cool blue and purple color palette with warm orange accent from monitor game visuals, keep product appearance unchanged, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---\n\n**用户**: Eye-level front shot with slight low angle, the AI condenser microphone centered with a braided 3.5mm cable plugged into the monitoring jack, a Caucasian male content creator in his late 20s with short dark hair and light stubble, wearing professional over-ear headphones connected to the mic, eyes closed and head tilted slightly as if monitoring his own voice with concentration, sitting in a home studio with gray acoustic foam panels on the wall behind him, a MIDI keyboard and audio interface with glowing LED indicators visible on the wooden desk, three-point lighting with warm tungsten light from a vintage Edison bulb desk lamp on the left creating golden highlights on the microphone's brushed metal body, cool blue fill light from a computer screen on the right casting subtle shadows, and soft overhead ambient, fine holographic audio waveform visualization floating near the microphone capsule with tiny particles, shallow depth of field with background studio equipment softly blurred, cinematic warm-cool contrast grading, keep product appearance unchanged, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---\n\n**用户**: Four-panel grid lifestyle collage with dark border frames, top-left panel: Caucasian female live streamer in her mid-20s with long brown hair, excited expression talking to camera, the RGB-lit microphone on her gaming desk with ring light reflected in her eyes, gaming room background with purple ambient light and collectible figures on shelves, shot from slight low angle; top-right panel: Caucasian male esports player in his early 30s with short blond hair, intense focused expression leaning forward at his gaming setup, microphone positioned near his mouth, triple monitor setup displaying game, RGB lighting throughout the room, shot from side angle; bottom-left panel: Caucasian female teacher in her early 30s with blonde ponytail, warm smile looking at her laptop screen delivering an online class, microphone on a clean minimalist white desk, bright natural window light from behind creating soft halo, home office with plants; bottom-right panel: Caucasian male podcaster in his late 30s with short dark hair and glasses, speaking passionately into the microphone, cozy home office with bookshelves, warm Edison bulb string lights, leather chair, shot from over-the-shoulder angle; each panel has distinct lighting color temperature and camera angle but unified cinematic quality, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---\n\n**用户**: Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality\n\n**系统**: {\n  \"mode\": \"img2img\",\n  \"model\": \"gpt-image-2-flatfee-2k\",\n  \"size\": \"1536x2048\",\n  \"quality\": \"standard\",\n  \"quality_applied\": false,\n  \"output_format_requested\": \"png\",\n  \"output_format_effective\": \"png\",\n  \"output_format_auto_adjusted\": false,\n  \"background\": \"auto\",\n  \"moderation\": \"auto\",\n  \"gpt_image_params_applied\": true,\n  \"input_fidelity\": \"high\",\n  \"reference_inputs\": 2,\n  \"uploaded_images\": 2,\n  \"input_max_side\": 0,\n  \"request_timeout\": 600,\n  \"download_timeout\": 120,\n  \"data_source\": \"b64_json\",\n  \"extra_params_applied\": false,\n  \"size_selected\": \"custom (自定义)\",\n  \"custom_size\": \"1536x2048\",\n  \"seed\": 925471225\n}\n\n---"
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 22,
+      "type": "AB_Images",
+      "pos": [
+        2593.3840013290915,
+        -3136.967410180237
+      ],
+      "size": [
+        263.5089222428983,
+        278.25870084169355
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "a",
+          "name": "a",
+          "type": "IMAGE",
+          "link": 123
+        },
+        {
+          "localized_name": "b",
+          "name": "b",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 172
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "aux_id": "kk8bit/KayTool",
+        "ver": "f4c80b009194d51a13a94f06d37847110a174c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "color": "#c09430",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 138,
+      "type": "小林AtlasCloudUnifiedImgGen",
+      "pos": [
+        1506.9312747925296,
+        -3134.2167765843787
+      ],
+      "size": [
+        400,
+        794
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "参考图1",
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 173
+        },
+        {
+          "label": "参考图2",
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 190
+        },
+        {
+          "label": "参考图3",
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图4",
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图5",
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图6",
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "base_url",
+          "name": "base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "base_url"
+          },
+          "link": 116
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": 117
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 189
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "model"
+          },
+          "link": 114
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_size",
+          "name": "custom_size",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "output_format",
+          "name": "output_format",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "output_format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "input_fidelity",
+          "name": "input_fidelity",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "input_fidelity"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "moderation",
+          "name": "moderation",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "moderation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "request_timeout",
+          "name": "request_timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "request_timeout"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "download_timeout",
+          "name": "download_timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "download_timeout"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "input_max_side",
+          "name": "input_max_side",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "input_max_side"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "return_input_on_error",
+          "name": "return_input_on_error",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "return_input_on_error"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_params",
+          "name": "extra_params",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_params"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "clear_chats",
+          "name": "clear_chats",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "clear_chats"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "async_mode",
+          "name": "async_mode",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "async_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "verify_ssl",
+          "name": "verify_ssl",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "verify_ssl"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "poll_path",
+          "name": "poll_path",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "poll_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_retries",
+          "name": "max_retries",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_retries"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "endpoint",
+          "name": "endpoint",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "endpoint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "response_format",
+          "name": "response_format",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "response_format"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            120,
+            123
+          ]
+        },
+        {
+          "localized_name": "info",
+          "name": "info",
+          "type": "STRING",
+          "links": [
+            121
+          ]
+        },
+        {
+          "localized_name": "对话记录",
+          "name": "对话记录",
+          "type": "STRING",
+          "links": [
+            122
+          ]
+        },
+        {
+          "localized_name": "图片链接",
+          "name": "图片链接",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "小林AtlasCloudUnifiedImgGen",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://value.apiqik.online",
+        "",
+        "生成海绵宝宝画风鱼形态，保留人物特征",
+        "dall-e-3",
+        "custom (自定义)",
+        "1536x2048",
+        "standard",
+        "png",
+        "high",
+        "auto",
+        "auto",
+        600,
+        120,
+        0,
+        false,
+        108872758,
+        "randomize",
+        "",
+        true,
+        false,
+        true,
+        "",
+        0,
+        "auto",
+        "b64_json"
+      ],
+      "color": "#008181",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 158,
+      "type": "小林AtlasCloudModelScopeChat",
+      "pos": [
+        321.8782188311459,
+        -2630.3594969205474
+      ],
+      "size": [
+        455.7403706077305,
+        950.0649808592711
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "参考图1",
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 171
+        },
+        {
+          "label": "参考图2",
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图3",
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图4",
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图5",
+          "localized_name": "image_5",
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图6",
+          "localized_name": "image_6",
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "base_url",
+          "name": "base_url",
+          "type": "STRING",
+          "widget": {
+            "name": "base_url"
+          },
+          "link": 147
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": 148
+        },
+        {
+          "localized_name": "model_id",
+          "name": "model_id",
+          "type": "STRING",
+          "widget": {
+            "name": "model_id"
+          },
+          "link": 146
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "user_prompt",
+          "name": "user_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "user_prompt"
+          },
+          "link": 186
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed_mode",
+          "name": "seed_mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "seed_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "temperature",
+          "name": "temperature",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "temperature"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "top_p",
+          "name": "top_p",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "top_p"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_tokens",
+          "name": "max_tokens",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "timeout",
+          "name": "timeout",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "timeout"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "AI回复",
+          "name": "AI回复",
+          "type": "STRING",
+          "links": [
+            185,
+            187
+          ]
+        },
+        {
+          "localized_name": "完整响应",
+          "name": "完整响应",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "信息",
+          "name": "信息",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "小林AtlasCloudModelScopeChat",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://api-inference.modelscope.cn/v1",
+        "",
+        "Qwen/Qwen3-VL-8B-Instruct",
+        "你是一位专业的AI绘画提示词工程师，擅长将用户的一段或多段简短描述转化为高质量、细节丰富的提示词。请按照以下步骤处理用户输入：\n\n1. 分析理解：\n   - 识别用户输入的核心主题和关键元素\n   - 确定画面类型（人物、风景、静物、概念艺术等）\n   - 提取已有的视觉细节、风格倾向和情感基调\n\n2. 结构化扩展：\n   - 主体描述：补充主体的详细特征（如人物的外貌、表情、服装、姿态；物体的材质、形状、纹理等）\n   - 场景环境：根据主题补充或完善场景信息（室内/室外、自然/城市、时代背景等）\n   - 构图视角：添加画面构图信息（视角高度、景别大小、主体位置、前景/背景关系等）\n   - 光影氛围：补充光源类型、光线方向、明暗对比、色调氛围等\n   - 风格化：根据内容补充适合的艺术风格、渲染技术或参考艺术家\n   - 质量标签：添加提升画面品质的技术描述（高细节、高分辨率、写实渲染等）\n\n3. 智能补全：\n   - 当用户输入缺少关键元素时，基于主题自动补充合理的场景、光源、环境氛围等\n   - 确保补充内容与主题风格协调一致，不产生冲突元素\n   - 保持原始意图的同时，丰富画面的叙事性和视觉层次\n\n4. 输出格式：\n   - 直接输出标签，不添加任何分类或说明\n   - 按照视觉重要性排序元素，主体描述在前，环境氛围在后\n   - 按照输入的分段进行输出，x段输入=x段输出，确保核心元素突出\n\n请直接返回扩展后的完整提示词，不需要解释你的思考过程或添加额外说明。",
+        "图片风格为「生活场景拼图」，四宫格布局。左上：游戏直播，麦克风+电脑+RGB灯光；右上：家庭录音，麦克风+耳机+隔音棉背景；左下：在线网课，麦克风+笔记本+书桌；右下：卡拉OK派对，麦克风+手机蓝牙播放+彩灯。每格底部有对应的英文短标签。统一深色系，RGB灯光作为氛围。无多余文字。",
+        1136239745,
+        "randomize",
+        "随机",
+        0.7,
+        0.9,
+        2048,
+        180
+      ]
+    },
+    {
+      "id": 156,
+      "type": "LoadImage",
+      "pos": [
+        479.7809571598622,
+        -3476.554944471344
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "选择文件上传",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            171,
+            172,
+            173,
+            191
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "YU7-4.1768_渲染层 1.png",
+        "image"
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 107,
+      "type": "XiaoLinApiPreset",
+      "pos": [
+        1152.512889809128,
+        -2996.1278457860567
+      ],
+      "size": [
+        270,
+        250
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖模型",
+          "name": "覆盖模型",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖接口地址",
+          "name": "覆盖接口地址",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖接口地址"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖API密钥",
+          "name": "覆盖API密钥",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖API密钥"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "STRING",
+          "links": [
+            114
+          ]
+        },
+        {
+          "localized_name": "接口地址",
+          "name": "接口地址",
+          "type": "STRING",
+          "links": [
+            116
+          ]
+        },
+        {
+          "localized_name": "API密钥",
+          "name": "API密钥",
+          "type": "STRING",
+          "links": [
+            117
+          ]
+        },
+        {
+          "localized_name": "API配置(JSON)",
+          "name": "API配置(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "提供商",
+          "name": "提供商",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "请求头(JSON)",
+          "name": "请求头(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "密钥引用",
+          "name": "密钥引用",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinApiPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "特惠站",
+        "",
+        "",
+        ""
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 174,
+      "type": "XiaoLinPromptPreset",
+      "pos": [
+        105.45503847643675,
+        -3043.5272804399524
+      ],
+      "size": [
+        428.18236107706304,
+        300.99981377965514
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "提示词内容",
+          "name": "提示词内容",
+          "type": "STRING",
+          "widget": {
+            "name": "提示词内容"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "提示词",
+          "name": "提示词",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "localized_name": "预览图",
+          "name": "预览图",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinPromptPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "精修-LLM",
+        "Vertical 2x2 four-quadrant lifestyle collage with real people using the YU7 A1 microphone in each scene. Microphone always visible with RGB purple-blue glow.\n\nTop-Left (Gaming): Rear-side angle. Young male gamer wearing headphones, side profile focused on gaming monitor. YU7 A1 mic on desk stand to the right. Keyboard, mouse, RGB lighting visible.\n\nTop-Right (Live Stream): Front angle. Young female streamer sitting at desk, smiling at camera. YU7 A1 mic on stand in front. Ring light, headphones, phone stand visible.\n\nBottom-Left (Online Teaching): 45-degree top-down angle. Middle-aged male teacher sitting at desk, looking at laptop screen. YU7 A1 mic on desk stand to the left. Textbooks, water cup, notebook visible.\n\nBottom-Right (Recording): Side profile close-up. Young male singer/voice actor wearing headphones, side face close to mic, singing or recording. YU7 A1 mic on stand. Acoustic foam background visible.\n\nEach quadrant has a short label at the bottom: 'Gaming', 'Live Stream', 'Online Teaching', 'Recording'. Dark color palette with RGB atmosphere. Keep product appearance consistent. No extra text. 3:4 ratio, commercial quality."
+      ]
+    },
+    {
+      "id": 180,
+      "type": "XiaoLinPromptPreset",
+      "pos": [
+        -191.6938810889334,
+        -2405.5863647756682
+      ],
+      "size": [
+        458.16070514124704,
+        450.7584270795005
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "提示词内容",
+          "name": "提示词内容",
+          "type": "STRING",
+          "widget": {
+            "name": "提示词内容"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "提示词",
+          "name": "提示词",
+          "type": "STRING",
+          "links": [
+            186
+          ]
+        },
+        {
+          "localized_name": "预览图",
+          "name": "预览图",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinPromptPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "--- 选择预设 ---",
+        "图1：首屏主视觉（仰拍Hero Shot）\n画面目标：3秒抓眼球，传递AI降噪+电竞RGB\n图内文案：AI Noise Cancellation Mic | 48kHz | RGB\n\nDramatic low-angle hero shot looking upward at the AI condenser microphone, black metal mesh head and dark gray brushed aluminum body, RGB lighting effects glowing blue-purple at the base, placed on a reflective dark desk surface with visible reflections, background is a dimly lit gaming room with LED strip lights along the wall edges, a curved monitor glow in the far distance, and acoustic foam panels, three-point lighting setup with cool blue key light from upper left casting sharp highlights on the metallic mesh, warm purple rim light from the right edge catching the body contours, and soft ambient glow from the monitor fill light, fine light particles and subtle lens flare floating in the air, shallow depth of field with background elements softly blurred, cinematic color grading with blue-purple palette, keep product appearance unchanged, no watermark, commercial quality\n\n图2：痛点唤醒（分屏对比，有人物）\n画面目标：放大噪音痛点，引发共鸣\n图内文案：Background Noise Ruins Your Stream?\n\nSplit-screen comparison image, left side shows a frustrated Caucasian male streamer in his late 20s with short brown hair, wearing a basic headset, hand on forehead looking stressed and annoyed, his room is messy with a desk fan and mechanical keyboard clatter indicated by red jagged sound wave graphics overlay, warm harsh tungsten lighting from a single desk lamp creating unflattering shadows, right side shows the same type of setup but calm and professional, the streamer is relaxed with a slight smile, smooth blue-purple audio waveform graphics overlay suggesting clarity, soft diffused lighting from monitor and LED strips, dark unified background connecting both halves with a glowing neon dividing line in the center, modern tech infographic style with rounded corner label boxes, cinematic color grading, no watermark, commercial quality\n\n图3：AI降噪卖点（俯拍特写，手正在按降噪键）\n画面目标：展示一键AI降噪功能\n图内文案：One-Tap AI Noise Cancellation\n\nTop-down overhead close-up shot of a Caucasian female hand with manicured nails pressing the noise cancellation button on top of the AI condenser microphone, the button glows bright blue upon activation with a soft pulse effect, fine blue-purple AI noise cancellation sound wave particles radiating outward from the microphone in a circular spiral pattern with tiny glowing dots and light halos, the microphone sits on a dark walnut wood desk with a mechanical keyboard partially visible at the top edge, a ceramic coffee mug with steam at the left corner, and a smartphone showing audio waveform at the right edge creating a realistic workspace, three-point lighting with warm tungsten desk lamp from the left casting golden highlights on the microphone body, cool blue ambient fill from a monitor screen off-camera right, and soft overhead ambient light, shallow depth of field focusing on the button press moment, tiny floating dust particles catching the light, keep product appearance unchanged, no watermark, commercial quality\n\n图4：RGB灯效卖点（侧面动态视角，有玩家）\n画面目标：展示RGB电竞灯效\n图内文案：Vibrant RGB Lighting Effects | 95 LED Beads\n\nCinematic tilted Dutch angle shot of the AI condenser microphone on a gaming desk, RGB lighting at the base cycling through rainbow gradient colors with visible light rays, subtle lens flare, and soft glow halos emanating outward, a Caucasian male gamer in his early 30s with short blond hair and focused expression in the background wearing over-ear headphones, leaning forward slightly looking at a curved ultrawide monitor displaying a game, his face softly illuminated by the monitor's cool glow, the gaming room has layered lighting with ambient LED strip underglow along the desk edge, purple wall wash lights, and a warm accent lamp in the far corner, mechanical keyboard with RGB keys and gaming mouse visible on the desk surface, atmospheric haze giving volume to the light beams, cool blue and purple color palette with warm orange accent from monitor game visuals, keep product appearance unchanged, no watermark, commercial quality\n\n图5：48kHz+监听卖点（正面平拍，音乐人场景）\n画面目标：展示高采样率和实时监听\n图内文案：48kHz Studio Quality | Real-Time Monitoring\n\nEye-level front shot with slight low angle, the AI condenser microphone centered with a braided 3.5mm cable plugged into the monitoring jack, a Caucasian male content creator in his late 20s with short dark hair and light stubble, wearing professional over-ear headphones connected to the mic, eyes closed and head tilted slightly as if monitoring his own voice with concentration, sitting in a home studio with gray acoustic foam panels on the wall behind him, a MIDI keyboard and audio interface with glowing LED indicators visible on the wooden desk, three-point lighting with warm tungsten light from a vintage Edison bulb desk lamp on the left creating golden highlights on the microphone's brushed metal body, cool blue fill light from a computer screen on the right casting subtle shadows, and soft overhead ambient, fine holographic audio waveform visualization floating near the microphone capsule with tiny particles, shallow depth of field with background studio equipment softly blurred, cinematic warm-cool contrast grading, keep product appearance unchanged, no watermark, commercial quality\n\n图6：场景展示四宫格（有人物，每格不同）\n画面目标：展示多场景使用\n图内文案：One Mic, All Scenarios\n\nFour-panel grid lifestyle collage with dark border frames, top-left panel: Caucasian female live streamer in her mid-20s with long brown hair, excited expression talking to camera, the RGB-lit microphone on her gaming desk with ring light reflected in her eyes, gaming room background with purple ambient light and collectible figures on shelves, shot from slight low angle; top-right panel: Caucasian male esports player in his early 30s with short blond hair, intense focused expression leaning forward at his gaming setup, microphone positioned near his mouth, triple monitor setup displaying game, RGB lighting throughout the room, shot from side angle; bottom-left panel: Caucasian female teacher in her early 30s with blonde ponytail, warm smile looking at her laptop screen delivering an online class, microphone on a clean minimalist white desk, bright natural window light from behind creating soft halo, home office with plants; bottom-right panel: Caucasian male podcaster in his late 30s with short dark hair and glasses, speaking passionately into the microphone, cozy home office with bookshelves, warm Edison bulb string lights, leather chair, shot from over-the-shoulder angle; each panel has distinct lighting color temperature and camera angle but unified cinematic quality, no watermark, commercial quality\n\n图7：产品参数/开箱展示（俯拍平铺，丰富桌面）\n画面目标：展示产品规格和配件，提供决策依据\n图内文案：What's in the Box | 48kHz | 95 RGB | AI Noise Cancellation\n\nTop-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality\n\n"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "SaveImage",
+      "pos": [
+        1991.581351534011,
+        -3147.5056221964037
+      ],
+      "size": [
+        562.2684259332354,
+        445.504300351663
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 120
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#c09430",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 178,
+      "type": "小林DetailPagePromptGenerator",
+      "pos": [
+        833.0650787244625,
+        -2647.7534104917245
+      ],
+      "size": [
+        447.53922551563255,
+        775.6960282095724
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "参考图1",
+          "localized_name": "image_1",
+          "name": "image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 191
+        },
+        {
+          "label": "参考图2",
+          "localized_name": "image_2",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图3",
+          "localized_name": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "参考图4",
+          "localized_name": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "api_url",
+          "name": "api_url",
+          "type": "STRING",
+          "widget": {
+            "name": "api_url"
+          },
+          "link": 174
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": 175
+        },
+        {
+          "localized_name": "model_name",
+          "name": "model_name",
+          "type": "STRING",
+          "widget": {
+            "name": "model_name"
+          },
+          "link": 176
+        },
+        {
+          "localized_name": "auto_optimize",
+          "name": "auto_optimize",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "auto_optimize"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "typography_optimize",
+          "name": "typography_optimize",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "typography_optimize"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "product_type",
+          "name": "product_type",
+          "type": "STRING",
+          "widget": {
+            "name": "product_type"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "selling_points",
+          "name": "selling_points",
+          "type": "STRING",
+          "widget": {
+            "name": "selling_points"
+          },
+          "link": 185
+        },
+        {
+          "localized_name": "design_style",
+          "name": "design_style",
+          "type": "COMBO",
+          "widget": {
+            "name": "design_style"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_style",
+          "name": "custom_style",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_style"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "scene_preference",
+          "name": "scene_preference",
+          "type": "COMBO",
+          "widget": {
+            "name": "scene_preference"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_scene",
+          "name": "custom_scene",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_scene"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "output_language",
+          "name": "output_language",
+          "type": "COMBO",
+          "widget": {
+            "name": "output_language"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt_count",
+          "name": "prompt_count",
+          "type": "INT",
+          "widget": {
+            "name": "prompt_count"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "提示词列表",
+          "name": "提示词列表",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            188
+          ]
+        },
+        {
+          "localized_name": "调试信息",
+          "name": "调试信息",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "小林DetailPagePromptGenerator",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "https://ai.t8star.cn/v1/chat/completions",
+        "",
+        "gemini-3-pro-preview",
+        false,
+        false,
+        "麦克风",
+        "遮瑕持久，水润服帖",
+        "自定义",
+        "",
+        "自定义",
+        "",
+        "中文",
+        49268,
+        "randomize",
+        7,
+        "你是一个专业的提示词分段提取助手。你的任务是将用户输入的一段包含多个电商详情页画面的描述文本，自动分割成对应每个画面的独立提示词，并以严格的 JSON 列表格式输出。\n\n规则：\n1. 用户输入的文本通常以“屏 X · 标题 (比例)”开头，然后跟随一段或多段英文提示词。你需要识别每个“屏”的结束位置，并提取出纯提示词内容（即画面描述的英文部分，不包含屏号、标题和画面比例标记）。\n2. 如果某个屏的描述没有明确提示词（例如只有标题），则将该屏的完整描述作为提示词。\n3. 输出格式：必须且仅输出一个纯 JSON 字符串列表 [\"prompt 1\", \"prompt 2\", ...]。\n   - 严禁使用 Markdown 代码块标记（如 ```json 或 ```）。\n   - 严禁包含任何其他解释性文字、前缀或后缀。\n   - 确保 JSON 格式合法，字符串内双引号需转义（如果原文包含双引号）。\n4. 提取后不要修改提示词的原文内容（保持语言和细节不变），仅去除提示词中的画面比例、与屏号等前缀。"
+      ]
+    },
+    {
+      "id": 179,
+      "type": "XiaoLinApiPreset",
+      "pos": [
+        -176.47627214458626,
+        -2782.06535618923
+      ],
+      "size": [
+        270,
+        250
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "preset",
+          "name": "preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖模型",
+          "name": "覆盖模型",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖模型"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖接口地址",
+          "name": "覆盖接口地址",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖接口地址"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "覆盖API密钥",
+          "name": "覆盖API密钥",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "覆盖API密钥"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "模型",
+          "type": "STRING",
+          "links": [
+            176
+          ]
+        },
+        {
+          "localized_name": "接口地址",
+          "name": "接口地址",
+          "type": "STRING",
+          "links": [
+            174
+          ]
+        },
+        {
+          "localized_name": "API密钥",
+          "name": "API密钥",
+          "type": "STRING",
+          "links": [
+            175
+          ]
+        },
+        {
+          "localized_name": "API配置(JSON)",
+          "name": "API配置(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "提供商",
+          "name": "提供商",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "请求头(JSON)",
+          "name": "请求头(JSON)",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "密钥引用",
+          "name": "密钥引用",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XiaoLinApiPreset",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "日日新",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 185,
+      "type": "35acc13b-b93b-4081-a0b3-4a1da5ca12c4",
+      "pos": [
+        1336.0213874625888,
+        -2657.6277935123694
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "输入任何",
+          "name": "anything",
+          "type": "*",
+          "link": 187
+        },
+        {
+          "localized_name": "输入任何_1",
+          "name": "anything_1",
+          "type": "*",
+          "link": 188
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "输出",
+          "name": "output",
+          "type": "*",
+          "links": [
+            189
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [],
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 186,
+      "type": "LoadImage",
+      "pos": [
+        782.6905181517534,
+        -3477.7038402549674
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "选择文件上传",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            190
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "YU7-4.1772_渲染层 1.png",
+        "image"
+      ],
+      "color": "#346434",
+      "bgcolor": "rgba(24,24,27,.9)"
+    }
+  ],
+  "links": [
+    [
+      114,
+      107,
+      0,
+      138,
+      9,
+      "STRING"
+    ],
+    [
+      116,
+      107,
+      1,
+      138,
+      6,
+      "STRING"
+    ],
+    [
+      117,
+      107,
+      2,
+      138,
+      7,
+      "STRING"
+    ],
+    [
+      120,
+      138,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      121,
+      138,
+      1,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      122,
+      138,
+      2,
+      40,
+      0,
+      "STRING"
+    ],
+    [
+      123,
+      138,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      146,
+      160,
+      0,
+      158,
+      8,
+      "STRING"
+    ],
+    [
+      147,
+      160,
+      1,
+      158,
+      6,
+      "STRING"
+    ],
+    [
+      148,
+      160,
+      2,
+      158,
+      7,
+      "STRING"
+    ],
+    [
+      171,
+      156,
+      0,
+      158,
+      0,
+      "IMAGE"
+    ],
+    [
+      172,
+      156,
+      0,
+      22,
+      1,
+      "IMAGE"
+    ],
+    [
+      173,
+      156,
+      0,
+      138,
+      0,
+      "IMAGE"
+    ],
+    [
+      174,
+      179,
+      1,
+      178,
+      4,
+      "STRING"
+    ],
+    [
+      175,
+      179,
+      2,
+      178,
+      5,
+      "STRING"
+    ],
+    [
+      176,
+      179,
+      0,
+      178,
+      6,
+      "STRING"
+    ],
+    [
+      185,
+      158,
+      0,
+      178,
+      10,
+      "STRING"
+    ],
+    [
+      186,
+      180,
+      0,
+      158,
+      10,
+      "STRING"
+    ],
+    [
+      187,
+      158,
+      0,
+      185,
+      0,
+      "STRING"
+    ],
+    [
+      188,
+      178,
+      0,
+      185,
+      1,
+      "STRING"
+    ],
+    [
+      189,
+      185,
+      0,
+      138,
+      8,
+      "STRING"
+    ],
+    [
+      190,
+      186,
+      0,
+      138,
+      1,
+      "IMAGE"
+    ],
+    [
+      191,
+      156,
+      0,
+      178,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 6,
+      "title": "Group",
+      "bounding": [
+        -262.1468491958582,
+        -3127.879380276058,
+        2933.7133077919543,
+        1504.3220281700392
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "35acc13b-b93b-4081-a0b3-4a1da5ca12c4",
+        "version": 1,
+        "state": {
+          "lastGroupId": 6,
+          "lastNodeId": 186,
+          "lastLinkId": 191,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "New Subgraph",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            507.1405296654974,
+            -1954.1989231070124,
+            120,
+            80
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            1768.4931034952233,
+            -1944.1989231070124,
+            120,
+            60
+          ]
+        },
+        "inputs": [
+          {
+            "id": "5737ef5b-d21e-4f78-b7fe-368fa85d0bbf",
+            "name": "anything",
+            "type": "*",
+            "linkIds": [
+              149
+            ],
+            "localized_name": "输入任何",
+            "shape": 7,
+            "pos": [
+              607.1405296654974,
+              -1934.1989231070124
+            ]
+          },
+          {
+            "id": "b856a750-72df-48e1-a90e-5c3e56c5e3d3",
+            "name": "anything_1",
+            "type": "*",
+            "linkIds": [
+              178
+            ],
+            "localized_name": "输入任何_1",
+            "shape": 7,
+            "pos": [
+              607.1405296654974,
+              -1914.1989231070124
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "11c467b7-b758-419c-bb74-1f36c916e884",
+            "name": "output",
+            "type": "*",
+            "linkIds": [
+              184
+            ],
+            "localized_name": "输出",
+            "pos": [
+              1788.4931034952233,
+              -1924.1989231070124
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 161,
+            "type": "easy showAnything",
+            "pos": [
+              637.455921254347,
+              -2106.085209654068
+            ],
+            "size": [
+              930.8770325377229,
+              1053.2703393923634
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "输入任何",
+                "name": "anything",
+                "shape": 7,
+                "type": "*",
+                "link": 149
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "输出",
+                "name": "output",
+                "type": "*",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-easy-use",
+              "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+              "Node name for S&R": "easy showAnything",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "input_ue_unconnectable": {},
+                "version": "7.8"
+              }
+            },
+            "widgets_values": [
+              "Dramatic low-angle hero shot looking upward at the AI condenser microphone, black metal mesh head and dark gray brushed aluminum body, RGB lighting effects glowing blue-purple at the base, placed on a reflective dark desk surface with visible reflections, background is a dimly lit gaming room with LED strip lights along the wall edges, a curved monitor glow in the far distance, and acoustic foam panels, three-point lighting setup with cool blue key light from upper left casting sharp highlights on the metallic mesh, warm purple rim light from the right edge catching the body contours, and soft ambient glow from the monitor fill light, fine light particles and subtle lens flare floating in the air, shallow depth of field with background elements softly blurred, cinematic color grading with blue-purple palette, keep product appearance unchanged, no watermark, commercial quality\n\nSplit-screen comparison image, left side shows a frustrated Caucasian male streamer in his late 20s with short brown hair, wearing a basic headset, hand on forehead looking stressed and annoyed, his room is messy with a desk fan and mechanical keyboard clatter indicated by red jagged sound wave graphics overlay, warm harsh tungsten lighting from a single desk lamp creating unflattering shadows, right side shows the same type of setup but calm and professional, the streamer is relaxed with a slight smile, smooth blue-purple audio waveform graphics overlay suggesting clarity, soft diffused lighting from monitor and LED strips, dark unified background connecting both halves with a glowing neon dividing line in the center, modern tech infographic style with rounded corner label boxes, cinematic color grading, no watermark, commercial quality\n\nTop-down overhead close-up shot of a Caucasian female hand with manicured nails pressing the noise cancellation button on top of the AI condenser microphone, the button glows bright blue upon activation with a soft pulse effect, fine blue-purple AI noise cancellation sound wave particles radiating outward from the microphone in a circular spiral pattern with tiny glowing dots and light halos, the microphone sits on a dark walnut wood desk with a mechanical keyboard partially visible at the top edge, a ceramic coffee mug with steam at the left corner, and a smartphone showing audio waveform at the right edge creating a realistic workspace, three-point lighting with warm tungsten desk lamp from the left casting golden highlights on the microphone body, cool blue ambient fill from a monitor screen off-camera right, and soft overhead ambient light, shallow depth of field focusing on the button press moment, tiny floating dust particles catching the light, keep product appearance unchanged, no watermark, commercial quality\n\nCinematic tilted Dutch angle shot of the AI condenser microphone on a gaming desk, RGB lighting at the base cycling through rainbow gradient colors with visible light rays, subtle lens flare, and soft glow halos emanating outward, a Caucasian male gamer in his early 30s with short blond hair and focused expression in the background wearing over-ear headphones, leaning forward slightly looking at a curved ultrawide monitor displaying a game, his face softly illuminated by the monitor's cool glow, the gaming room has layered lighting with ambient LED strip underglow along the desk edge, purple wall wash lights, and a warm accent lamp in the far corner, mechanical keyboard with RGB keys and gaming mouse visible on the desk surface, atmospheric haze giving volume to the light beams, cool blue and purple color palette with warm orange accent from monitor game visuals, keep product appearance unchanged, no watermark, commercial quality\n\nEye-level front shot with slight low angle, the AI condenser microphone centered with a braided 3.5mm cable plugged into the monitoring jack, a Caucasian male content creator in his late 20s with short dark hair and light stubble, wearing professional over-ear headphones connected to the mic, eyes closed and head tilted slightly as if monitoring his own voice with concentration, sitting in a home studio with gray acoustic foam panels on the wall behind him, a MIDI keyboard and audio interface with glowing LED indicators visible on the wooden desk, three-point lighting with warm tungsten light from a vintage Edison bulb desk lamp on the left creating golden highlights on the microphone's brushed metal body, cool blue fill light from a computer screen on the right casting subtle shadows, and soft overhead ambient, fine holographic audio waveform visualization floating near the microphone capsule with tiny particles, shallow depth of field with background studio equipment softly blurred, cinematic warm-cool contrast grading, keep product appearance unchanged, no watermark, commercial quality\n\nFour-panel grid lifestyle collage with dark border frames, top-left panel: Caucasian female live streamer in her mid-20s with long brown hair, excited expression talking to camera, the RGB-lit microphone on her gaming desk with ring light reflected in her eyes, gaming room background with purple ambient light and collectible figures on shelves, shot from slight low angle; top-right panel: Caucasian male esports player in his early 30s with short blond hair, intense focused expression leaning forward at his gaming setup, microphone positioned near his mouth, triple monitor setup displaying game, RGB lighting throughout the room, shot from side angle; bottom-left panel: Caucasian female teacher in her early 30s with blonde ponytail, warm smile looking at her laptop screen delivering an online class, microphone on a clean minimalist white desk, bright natural window light from behind creating soft halo, home office with plants; bottom-right panel: Caucasian male podcaster in his late 30s with short dark hair and glasses, speaking passionately into the microphone, cozy home office with bookshelves, warm Edison bulb string lights, leather chair, shot from over-the-shoulder angle; each panel has distinct lighting color temperature and camera angle but unified cinematic quality, no watermark, commercial quality\n\nTop-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality"
+            ]
+          },
+          {
+            "id": 181,
+            "type": "easy showAnything",
+            "pos": [
+              1584.2472227925998,
+              -2100.740996198701
+            ],
+            "size": [
+              854.3481385270645,
+              1055.5702506510975
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "输入任何",
+                "name": "anything",
+                "shape": 7,
+                "type": "*",
+                "link": 178
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "输出",
+                "name": "output",
+                "type": "*",
+                "links": [
+                  184
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-easy-use",
+              "ver": "3cf9ab4e63c9cd2b6f4ebf5fa22f36d8152b3395",
+              "Node name for S&R": "easy showAnything",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "input_ue_unconnectable": {},
+                "version": "7.8"
+              }
+            },
+            "widgets_values": [
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality",
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality",
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality",
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality",
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality",
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality",
+              "Top-down flat-lay unboxing photograph with slight tilt angle, the AI condenser microphone, braided USB-C cable coiled neatly, and user manual artfully arranged on a dark charcoal textured desk mat with visible fabric weave, surrounding lifestyle items creating a rich workspace scene including a small potted succulent in a concrete planter, a white ceramic coffee mug with latte art, wireless earbuds in their charging case, a smartphone displaying the microphone companion app, and a small notepad with pen, soft directional light from upper left casting long elegant shadows with good depth separation, warm tungsten accent light creating golden highlights on the metallic microphone body and USB connector, cool blue ambient fill from below suggesting monitor glow, each item casting realistic soft shadows, rounded rectangle label tags pointing to each included accessory with fine lines, keep product appearance unchanged, no watermark, commercial quality"
+            ]
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 149,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 161,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 178,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 181,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 184,
+            "origin_id": 181,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "STRING"
+          }
+        ],
+        "extra": {
+          "ue_links": [],
+          "links_added_by_ue": []
+        }
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "frontendVersion": "1.42.15",
+    "ds": {
+      "scale": 0.3719008264462812,
+      "offset": [
+        442.38061467148384,
+        3710.476872615561
+      ]
+    }
+  },
+  "version": 0.4
+}
