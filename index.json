@@ -21,6 +21,13 @@
       "description": "去魔搭申请api：https://modelscope.cn/my/overview",
       "tags": [],
       "file": "ai搭配llm提示词.json"
+    },
+    {
+      "id": "双llm",
+      "name": "双LLM",
+      "description": "上传多段提示词，自动拆分跟优化，需要能识图的模型，并且设置好分多少段",
+      "tags": [],
+      "file": "双llm.json"
     }
   ]
 }
